@@ -21,7 +21,7 @@ The running order of the code files are as follows:
 3. 2tests_for_RFR.py  
 
 ## How to run
-First, starting with 'Generate_grids.py' file to generate the dataset. The code in this file will first use the UCLCHEM model to run over a large grid of parameter combinations, the outputs are chemical abundances of various species. Then with some calculations, the processed output data are taken as the inputs of the RADEX model to run RADEX. The ultimate outputs will be produced and saved into a csv file called 'Results.csv', and it is the dataset for this project, the other two .py files are both based on this dataset. The 'Results.csv' file is not contained in the repository, but after running Generate_grids.py, it will be automatically generated.  
+First, starting with 'Generate_grids.py' file to generate the dataset. The code in this file will first use the UCLCHEM model to run over a large grid of parameter combinations, the outputs are chemical abundances of various species. Then with some calculations, the processed output data are taken as the inputs of the RADEX model to run RADEX. The ultimate outputs will be produced and saved into a csv file called 'Results.csv', and it is the dataset for this project, the other two .py files are both based on this dataset. The 'Results.csv' file is not contained in the repository because it is too large and exceeds the maximum upload file size allowed by GitHub, but after running Generate_grids.py, it will be automatically generated.  
 
 Secondly, run 'RFR_Modelling.py' to do some random forest regression modelling. It will print the score and mean squared error of the model, produce the plot of predicted values, and provide the importance of each line and rank these lines.  
 
